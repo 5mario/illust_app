@@ -1,0 +1,34 @@
+body {
+  min-height: 100vh;
+  font-size: 0;
+  margin: 0 auto;
+  padding: 0;
+
+  display: grid;
+  /* 聖杯レイアウト */
+  grid-template:
+      "header header header" 40px
+      "left   center right " 1fr
+      "footer footer footer"  40px
+      / 200px   1fr   200px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: center;
+}
+
+#lBer {
+  grid-area: left;
+}
+
+#rBer {
+  grid-area: right;
+}
+
+footer {
+  grid-area: footer;
+}
